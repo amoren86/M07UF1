@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form-servlet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<h1>Salary calculation:</h1>
+	<form method="POST" action="SalaryServlet">
+		<label for="salary">Gross salary:</label> 
+		<input id="salary"
+			type="number" name="salary" min="0" /> 
+		<label for="children">Children:</label>
+		<input id="children" type="number" name="children" min="0">
+		<input
+			type="submit">
+	</form>
+</body>
+</html>
