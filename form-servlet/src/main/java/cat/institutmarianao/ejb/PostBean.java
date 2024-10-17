@@ -3,8 +3,8 @@ package cat.institutmarianao.ejb;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
+import jakarta.ejb.LocalBean;
+import jakarta.ejb.Stateless;
 
 @Stateless
 @LocalBean

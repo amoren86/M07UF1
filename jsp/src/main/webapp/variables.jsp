@@ -5,15 +5,15 @@
 <title>Àmbits de les variables a JSLT</title>
 </head>
 <body>
-	<c:set var="test" value="Valor d’una variable d’àmbit de pàgina"
+	<c:set var="test" value="Valor d'una variable d'àmbit de pàgina"
 		scope="page" />
-	<c:set var="test" value="Valor d’una variable d’àmbit de request"
+	<c:set var="test" value="Valor d'una variable d'àmbit de request"
 		scope="request" />
 
-	<c:set var="test" value="Valor d’una variable d’àmbit de sessió"
+	<c:set var="test" value="Valor d'una variable d'àmbit de sessió"
 		scope="session" />
 
-	<c:set var="test" value="Valor d’una variable d’àmbit d’aplicació"
+	<c:set var="test" value="Valor d'una variable d'àmbit d'aplicació"
 		scope="application" />
 	<h1>Àmbits de les variables a JSLT:</h1>
 	<table border="1">
@@ -26,7 +26,7 @@
 			<td><c:out value="${pageScope.test}" /></td>
 		</tr>
 		<tr>
-			<td><b>Âmbit de Request: </b></td>
+			<td><b>Âmbit de request: </b></td>
 			<td><c:out value="${requestScope.test}" /></td>
 		</tr>
 		<tr>
@@ -34,7 +34,7 @@
 			<td><c:out value="${sessionScope.test}" /></td>
 		</tr>
 		<tr>
-			<td><b>Àmbit d’aplicació</b></td>
+			<td><b>Àmbit d'aplicació</b></td>
 			<td><c:out value="${applicationScope.test}" /></td>
 		</tr>
 	</table>

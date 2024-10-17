@@ -3,14 +3,13 @@ package cat.institutmarianao.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.ejb.EJB;
-import javax.ejb.EJBAccessException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import cat.institutmarianao.ejb.LibraryLocal;
+import jakarta.ejb.EJB;
+import jakarta.ejb.EJBAccessException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = { "/libraryServlet" })
 public class LibraryServlet extends HttpServlet {

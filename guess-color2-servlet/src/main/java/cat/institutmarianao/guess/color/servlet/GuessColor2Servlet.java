@@ -2,11 +2,11 @@ package cat.institutmarianao.guess.color.servlet;
 
 import java.io.IOException;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class GuessColor2Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -32,7 +32,7 @@ public class GuessColor2Servlet extends HttpServlet {
 		String paramColor = request.getParameter("color");
 
 		if (paramColor == null) {
-			response.sendRedirect("GuessColor2.html");
+			response.sendRedirect("guess_color_2.html");
 		} else if (initColor.equalsIgnoreCase(paramColor)) {
 			response.sendRedirect("win.html");
 		} else {

@@ -1,6 +1,6 @@
 package cat.institutmarianao.ejb;
 
-import javax.ejb.Stateful;
+import jakarta.ejb.Stateful;
 
 /**
  * Session Bean implementation class Post2Bean

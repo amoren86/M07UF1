@@ -3,11 +3,11 @@ package cat.institutmarianao.session;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet(name = "SessionServlet2", urlPatterns = { "/sessionServlet2" })
 public class SessionServlet2 extends HttpServlet {

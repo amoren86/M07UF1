@@ -3,10 +3,10 @@ package cat.institutmarianao.hidden;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "HiddenFieldServlet1", urlPatterns = { "/hiddenFieldServlet1" })
 public class HiddenFieldServlet1 extends HttpServlet {

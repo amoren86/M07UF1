@@ -13,19 +13,25 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		<compiler-plugin.version>3.11.0</compiler-plugin.version>
+		<war-plugin.version>3.3.2</war-plugin.version>
+		<jakartaee-api.version>10.0.0</jakartaee-api.version>
+		<jakarta.servlet.jsp.jstl>3.0.2</jakarta.servlet.jsp.jstl>
 	</properties>
 
 	<dependencies>
+		<!-- Jakarta J2EE implementation -->
 		<dependency>
 			<groupId>jakarta.platform</groupId>
 			<artifactId>jakarta.jakartaee-web-api</artifactId>
-			<version>8.0.0</version>
+			<version>${jakartaee-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Jakarta JSTL -->
 		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+			<version>${jakarta.servlet.jsp.jstl}</version>
 		</dependency>
 	</dependencies>
 
@@ -36,13 +42,13 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
-					<version>3.3.1</version>
+					<version>${war-plugin.version}</version>
 				</plugin>
 				<!-- Maven compiler -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>${compiler-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>

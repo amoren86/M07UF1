@@ -5,11 +5,11 @@ import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class PromoServlet extends HttpServlet {
 
@@ -17,7 +17,7 @@ public class PromoServlet extends HttpServlet {
 
 	private int visits;
 
-	private int num;
+	private int num = 0;
 	private String promoUrl;
 	private Set<String> ip;
 
@@ -31,7 +31,7 @@ public class PromoServlet extends HttpServlet {
 	}
 
 	@Override
-	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		try (PrintWriter out = response.getWriter()) {
 

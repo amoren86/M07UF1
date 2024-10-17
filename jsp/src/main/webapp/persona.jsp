@@ -8,7 +8,9 @@
 	String adrecaPostal = "Blackpool, England";
 	String email = "oswin@dr.who";
 	boolean treballa = false;
-	float alcada = 167.23f;%>
+	float alcada = 167.23f;
+	%>
+	<%	int comptador=0; %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +20,7 @@
 <body>
 	<h1>Descrivint una persona</h1>
 	<h2>Les dades de la persona són:</h2>
+	<h1>Hola, has executat aquesta pàgina <%= comptador++ %> vegades.</h1>
 	<ul>
 		<li>Es diu: <%=nomPersona + " " + cognoms%>
 		</li>

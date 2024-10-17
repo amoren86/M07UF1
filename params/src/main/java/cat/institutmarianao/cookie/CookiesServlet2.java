@@ -3,11 +3,11 @@ package cat.institutmarianao.cookie;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "CookiesServlet2", urlPatterns = { "/cookiesServlet2" })
 public class CookiesServlet2 extends HttpServlet {
@@ -29,7 +29,7 @@ public class CookiesServlet2 extends HttpServlet {
 			Cookie[] cookies = request.getCookies();
 			Cookie userCookie = findCookie(cookies, "user");
 			if (userCookie != null) {
-				// TODO - B64Decode value from cookiec after get
+				// TODO - B64Decode value from cookies after get
 				out.print("Hello " + userCookie.getValue() + "!");
 			} else {
 				out.print("Cookie not found!");
